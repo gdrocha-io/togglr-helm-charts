@@ -2,7 +2,7 @@
 replicaCount: 1
 
 image:
-  repository: togglr/frontend
+  repository: gdrocha/togglr-frontend
   pullPolicy: IfNotPresent
   tag: "1.0.0"
 
