@@ -108,8 +108,8 @@ helm install togglr-frontend togglr/togglr-frontend \
 
 ```bash
 # Clone repository
-git clone https://github.com/gdrocha-io/togglr-charts.git
-cd togglr-charts
+git clone https://github.com/gdrocha-io/togglr-helm-charts.git
+cd togglr-helm-charts
 
 # Install charts locally
 helm install togglr-backend ./charts/togglr-backend
@@ -139,8 +139,8 @@ We welcome contributions to improve the Helm charts!
 
 ```bash
 # Fork and clone the repository
-git clone https://github.com/YOUR_USERNAME/togglr-charts.git
-cd togglr-charts
+git clone https://github.com/YOUR_USERNAME/togglr-helm-charts.git
+cd togglr-helm-charts
 
 # Create feature branch
 git checkout -b feature/chart-improvement
@@ -162,8 +162,8 @@ helm template test ./charts/togglr-backend
 ## Support
 
 - 📖 [Documentation](https://github.com/gdrocha-io/togglr/wiki)
-- 🐛 [Issue Tracker](https://github.com/gdrocha-io/togglr-charts/issues)
-- 💬 [Discussions](https://github.com/gdrocha-io/togglr-charts/discussions)
+- 🐛 [Issue Tracker](https://github.com/gdrocha-io/togglr-helm-charts/issues)
+- 💬 [Discussions](https://github.com/gdrocha-io/togglr-helm-charts/discussions)
 - 📧 [Email](mailto:gabriel@gdrocha.io)
 
 ## License
@@ -174,7 +174,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**[⭐ Star this project](https://github.com/gdrocha-io/togglr-charts) if you find it useful!**
+**[⭐ Star this project](https://github.com/gdrocha-io/togglr-helm-charts) if you find it useful!**
 
 Made with ❤️ by [Gabriel da Rocha](https://github.com/gdrocha)
 

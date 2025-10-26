@@ -12,7 +12,7 @@ This Helm chart deploys the Togglr Feature Toggle Management System Frontend on 
 
 ```bash
 # Add the chart repository
-helm repo add togglr https://gdrocha-io.github.io/togglr-charts
+helm repo add togglr https://gdrocha-io.github.io/togglr-helm-charts
 helm repo update
 
 # Install with default values
