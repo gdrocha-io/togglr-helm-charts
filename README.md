@@ -26,7 +26,7 @@ This repository contains Helm charts for deploying the Togglr Feature Toggle Man
 ### Add Helm Repository
 
 ```bash
-helm repo add togglr https://gdrocha-io.github.io/togglr-charts
+helm repo add togglr https://gdrocha-io.github.io/togglr-helm-charts/
 helm repo update
 ```
 
@@ -42,8 +42,7 @@ helm install togglr-backend togglr/togglr-backend \
   --set app.jwt.secret=your-jwt-secret
 
 # Install frontend
-helm install togglr-frontend togglr/togglr-frontend \
-  --set app.apiUrl=http://togglr-backend:8080/api/v1
+helm install togglr-frontend togglr/togglr-frontend
 ```
 
 ### Install with Custom Values

@@ -77,9 +77,6 @@ The following table lists the configurable parameters and their default values.
 
 ```yaml
 # values-basic.yaml
-app:
-  apiUrl: "https://api.togglr.example.com/api/v1"
-
 ingress:
   enabled: true
   className: "nginx"
@@ -94,11 +91,7 @@ ingress:
 
 ```yaml
 # values-production.yaml
-replicaCount: 3
-
-app:
-  apiUrl: "https://api.togglr.example.com/api/v1"
-  domain: "https://togglr.example.com"
+replicaCount: 1
 
 ingress:
   enabled: true
@@ -131,31 +124,6 @@ autoscaling:
   targetCPUUtilizationPercentage: 70
 ```
 
-### Development Configuration
-
-```yaml
-# values-dev.yaml
-app:
-  apiUrl: "http://togglr-backend.togglr-dev:8080/api/v1"
-
-ingress:
-  enabled: true
-  className: "nginx"
-  hosts:
-    - host: togglr-dev.local
-      paths:
-        - path: /
-          pathType: Prefix
-
-resources:
-  limits:
-    cpu: 200m
-    memory: 256Mi
-  requests:
-    cpu: 100m
-    memory: 128Mi
-```
-
 ## Installation Examples
 
 ### Complete Stack Installation
@@ -170,19 +138,7 @@ helm install togglr-backend togglr/togglr-backend \
 kubectl wait --for=condition=ready pod -l app.kubernetes.io/name=togglr-backend --timeout=300s
 
 # Install frontend
-helm install togglr-frontend togglr/togglr-frontend \
-  --set app.apiUrl=http://togglr-backend:8080/api/v1 \
-  --set ingress.enabled=true \
-  --set ingress.hosts[0].host=togglr.local
-```
-
-### With External Backend
-
-```bash
-helm install togglr-frontend togglr/togglr-frontend \
-  --set app.apiUrl=https://external-api.example.com/api/v1 \
-  --set ingress.enabled=true \
-  --set ingress.hosts[0].host=togglr.example.com
+helm install togglr-frontend togglr/togglr-frontend -f {path}/values.yaml
 ```
 
 ## Health Checks
@@ -192,21 +148,6 @@ The frontend container includes health checks:
 - **Liveness Probe**: HTTP GET on port 80
 - **Readiness Probe**: HTTP GET on port 80
 - **Startup Probe**: HTTP GET on port 80 with extended timeout
-
-## Security Considerations
-
-1. **HTTPS**: Always use HTTPS in production
-2. **CSP Headers**: The application includes Content Security Policy headers
-3. **Resource Limits**: Set appropriate resource limits
-4. **Network Policies**: Consider implementing network policies
-
-## Monitoring
-
-The frontend serves static files and doesn't expose metrics endpoints, but you can monitor:
-
-- HTTP response codes via ingress controller metrics
-- Resource usage via Kubernetes metrics
-- Application logs for errors
 
 ## Troubleshooting
 

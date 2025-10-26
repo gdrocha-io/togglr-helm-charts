@@ -37,7 +37,7 @@ ingress:
   className: ""
   annotations: {}
   hosts:
-    - host: togglr-backend.local
+    - host: togglr.company.com
       paths:
         - path: /
           pathType: Prefix
@@ -78,7 +78,7 @@ config:
   database:
     url: "jdbc:postgresql://postgresql.database.svc.cluster.local:5432/togglr"
     username: "togglr"
-    password: "F2iDj8kR32XgBMv2"
+    password: "your-database-password"
     # Use existing secret for database credentials (optional)
     # existingSecret: ""
     # usernameKey: "username"
@@ -97,7 +97,7 @@ config:
 
   # JWT Configuration
   jwt:
-    secret: "2efd942a42470fd9748db3bd3cc573b5"
+    secret: "your-jwt-secret"
     expiration: "86400000" # 24 hours
     # Use existing secret for JWT (optional)
     # existingSecret: ""

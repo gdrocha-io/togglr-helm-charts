@@ -37,7 +37,7 @@ ingress:
   className: ""
   annotations: {}
   hosts:
-    - host: togglr-frontend.local
+    - host: togglr.company.com
       paths:
         - path: /
           pathType: Prefix
@@ -62,5 +62,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
-
