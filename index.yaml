@@ -1,25 +1,47 @@
 apiVersion: v1
 entries:
   togglr-backend:
-    - apiVersion: v2
-      appVersion: 1.0.0
-      created: "2024-01-01T00:00:00Z"
-      description: Helm chart for Togglr Backend - Feature Toggle Management System
-      digest: ""
-      name: togglr-backend
-      type: application
-      urls:
-        - https://github.com/gdrocha-io/togglr-helm-charts/releases/download/togglr-backend-1.0.0/togglr-backend-1.0.0.tgz
-      version: 1.0.0
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-10-26T19:15:25.865816152-03:00"
+    description: A Helm chart for Togglr Feature Toggle Management System Backend
+    digest: fa3645758a7b026ab0da6eb359874d81e36b0b22b2cb262b24b58f1686c50c9c
+    home: https://github.com/gdrocha-io/togglr-backend
+    keywords:
+    - feature-toggle
+    - feature-flag
+    - java
+    - spring-boot
+    maintainers:
+    - name: Gabriel da Rocha
+      url: https://github.com/gdrocha
+    name: togglr-backend
+    sources:
+    - https://github.com/gdrocha-io/togglr-backend
+    type: application
+    urls:
+    - https://gdrocha-io.github.io/togglr-helm-charts/togglr-backend-1.0.0.tgz
+    version: 1.0.0
   togglr-frontend:
-    - apiVersion: v2
-      appVersion: 1.0.0
-      created: "2024-01-01T00:00:00Z"
-      description: Helm chart for Togglr Frontend - Feature Toggle Management System
-      digest: ""
-      name: togglr-frontend
-      type: application
-      urls:
-        - https://github.com/gdrocha-io/togglr-helm-charts/releases/download/togglr-frontend-1.0.0/togglr-frontend-1.0.0.tgz
-      version: 1.0.0
-generated: "2024-01-01T00:00:00Z"
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-10-26T19:15:25.866258216-03:00"
+    description: A Helm chart for Togglr Feature Toggle Management System Frontend
+    digest: 016fa9d285f116876daeb92efbe2e2ecfcf200204aa267cbc7420317fb0f2e4f
+    home: https://github.com/gdrocha-io/togglr-frontend
+    keywords:
+    - feature-toggle
+    - frontend
+    - react
+    - vite
+    maintainers:
+    - name: Gabriel da Rocha
+      url: https://github.com/gdrocha
+    name: togglr-frontend
+    sources:
+    - https://github.com/gdrocha-io/togglr-frontend
+    type: application
+    urls:
+    - https://gdrocha-io.github.io/togglr-helm-charts/togglr-frontend-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-10-26T19:15:25.865035644-03:00"
