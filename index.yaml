@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  togglr-backend:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-01-01T00:00:00Z"
+    description: Helm chart for Togglr Backend - Feature Toggle Management System
+    digest: ""
+    name: togglr-backend
+    type: application
+    urls:
+    - https://github.com/gdrocha-io/togglr-charts/releases/download/togglr-backend-1.0.0/togglr-backend-1.0.0.tgz
+    version: 1.0.0
+  togglr-frontend:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-01-01T00:00:00Z"
+    description: Helm chart for Togglr Frontend - Feature Toggle Management System
+    digest: ""
+    name: togglr-frontend
+    type: application
+    urls:
+    - https://github.com/gdrocha-io/togglr-charts/releases/download/togglr-frontend-1.0.0/togglr-frontend-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-01-01T00:00:00Z"

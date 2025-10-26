@@ -1,0 +1,17 @@
+apiVersion: v2
+name: togglr-backend
+description: A Helm chart for Togglr Feature Toggle Management System Backend
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+keywords:
+  - feature-toggle
+  - feature-flag
+  - java
+  - spring-boot
+home: https://github.com/gdrocha-io/togglr-backend
+sources:
+  - https://github.com/gdrocha-io/togglr-backend
+maintainers:
+  - name: Gabriel da Rocha
+    url: https://github.com/gdrocha

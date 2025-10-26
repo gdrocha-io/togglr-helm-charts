@@ -1,0 +1,27 @@
+# Helm
+*.tgz
+charts/*/charts/
+charts/*/requirements.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# Logs
+*.log
+
+# Local development
+values-local.yaml
+values-dev.yaml
+values-test.yaml

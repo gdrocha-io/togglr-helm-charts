@@ -1,0 +1,17 @@
+apiVersion: v2
+name: togglr-frontend
+description: A Helm chart for Togglr Feature Toggle Management System Frontend
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+keywords:
+  - feature-toggle
+  - frontend
+  - react
+  - vite
+home: https://github.com/gdrocha-io/togglr-frontend
+sources:
+  - https://github.com/gdrocha-io/togglr-frontend
+maintainers:
+  - name: Gabriel da Rocha
+    url: https://github.com/gdrocha
