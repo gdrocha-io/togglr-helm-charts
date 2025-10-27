@@ -161,7 +161,6 @@ helm template test ./charts/togglr-backend
 
 ## Support
 
-- 📖 [Documentation](https://github.com/gdrocha-io/togglr/wiki)
 - 🐛 [Issue Tracker](https://github.com/gdrocha-io/togglr-helm-charts/issues)
 - 💬 [Discussions](https://github.com/gdrocha-io/togglr-helm-charts/discussions)
 - 📧 [Email](mailto:gabriel@gdrocha.io)
